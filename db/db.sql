@@ -14,7 +14,6 @@ CREATE TABLE restaurants(
     price_range INT NOT NULL check(price_range >=1 and price_range <=5)
 );
 
-insert into restaurants(name, location, price_range) values('Ichiraku Ramen', 'Konoha', 3);
 
 -- REVIW AND RATING TABLE
 CREATE TABLE reviews(

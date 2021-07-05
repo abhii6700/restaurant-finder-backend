@@ -5,3 +5,7 @@ const pool = new Pool({
     rejectUnauthorized: false
   }
 });
+
+module.exports = {
+  query: (text, params) => pool.query(text, params),
+};
